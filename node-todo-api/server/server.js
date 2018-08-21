@@ -11,6 +11,7 @@ const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 
+//save new todo to api
 app.post('/todos',(req,res)=>{
     let todo = new Todo({
         text: req.body.text
